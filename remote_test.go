@@ -5,8 +5,23 @@ import (
 	"testing"
 )
 
+type testEntry struct {
+}
+
+func (*testEntry) ID() string {
+	return "test"
+}
+func (e *testEntry) Snapshot() ([]byte, error) {
+	return []byte("testValue"), nil
+}
+
+func (e *testEntry) Restore(data []byte) error {
+	return nil
+}
+
 func TestAll(t *testing.T) {
-	re, err := newRemoteEntry("theme")
+	var te testEntry
+	re, err := newRemoteEntry(&te)
 	Convey("Test Remote Entry", t, func() {
 		So(err, ShouldBeNil)
 		ConveyRemoteLock(re)
