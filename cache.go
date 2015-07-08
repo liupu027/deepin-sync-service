@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"os"
-	"pkg.linuxdeepin.com/lib/utils"
+	"pkg.deepin.io/lib/utils"
 )
 
 const (
