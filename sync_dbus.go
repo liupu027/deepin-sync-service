@@ -2,8 +2,8 @@ package sync
 
 import (
 	"fmt"
-	"pkg.linuxdeepin.com/lib"
-	"pkg.linuxdeepin.com/lib/dbus"
+	"pkg.deepin.io/lib"
+	"pkg.deepin.io/lib/dbus"
 )
 
 const (

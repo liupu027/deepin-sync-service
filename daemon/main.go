@@ -5,7 +5,7 @@ import (
 	"os"
 	"pkg.deepin.io/sync"
 	_ "pkg.deepin.io/sync/plugin/theme"
-	"pkg.linuxdeepin.com/lib/dbus"
+	"pkg.deepin.io/lib/dbus"
 )
 
 func main() {

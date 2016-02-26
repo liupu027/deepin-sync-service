@@ -3,7 +3,7 @@ package sync
 import (
 	"encoding/json"
 	"errors"
-	"pkg.linuxdeepin.com/lib/utils"
+	"pkg.deepin.io/lib/utils"
 	"time"
 )
 
